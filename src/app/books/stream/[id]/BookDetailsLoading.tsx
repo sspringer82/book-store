@@ -1,8 +1,8 @@
 import { Skeleton } from '@/components/ui/skeleton';
 
-const Loading = () => {
+const BookDetailsSkeleton = () => {
   return (
-    <div className="max-w-4xl mx-auto p-6 border rounded-lg shadow-sm flex flex-col md:flex-row gap-6">
+    <div className="w-full mx-auto p-6 border rounded-lg shadow-sm flex flex-col md:flex-row gap-6">
       <Skeleton className="w-64 h-96 rounded-lg bg-gray-300 dark:bg-gray-600" />
 
       <div className="flex flex-col gap-4 flex-1">
@@ -21,13 +21,9 @@ const Loading = () => {
           <Skeleton className="h-4 w-11/12 bg-gray-300 dark:bg-gray-600" />
           <Skeleton className="h-4 w-3/4 bg-gray-300 dark:bg-gray-600" />
         </div>
-
-        <div className="pt-4">
-          <Skeleton className="h-10 w-32 rounded-md bg-gray-300 dark:bg-gray-600" />
-        </div>
       </div>
     </div>
   );
 };
 
-export default Loading;
+export default BookDetailsSkeleton;

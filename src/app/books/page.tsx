@@ -8,11 +8,19 @@ const BooksPage: NextPage = async () => {
     books = await getAllBooks();
   } catch (error) {
     console.error('Error fetching books:', error);
-    return <div>Error fetching books</div>;
+    <div className="p-6 bg-red-100 min-h-screen flex items-center justify-center">
+      <p className="text-xl text-red-700">
+        Error fetching books. Please try again later.
+      </p>
+    </div>;
   }
 
   if (!books) {
-    return <div>No books found</div>;
+    return (
+      <div className="p-6 bg-gray-100 min-h-screen flex items-center justify-center">
+        <p className="text-xl text-gray-700">No books found</p>
+      </div>
+    );
   }
 
   return (

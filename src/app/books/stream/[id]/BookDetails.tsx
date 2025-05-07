@@ -10,23 +10,32 @@ const BookDetails: React.FC<Props> = async ({ id }) => {
   }
 
   return (
-    <div>
-      <h1>{book.title}</h1>
-      <p>
-        <strong>Author:</strong> {book.author}
-      </p>
-      <p>
-        <strong>Description:</strong> {book.description}
-      </p>
-      <p>
-        <strong>Price:</strong> ${book.price}
-      </p>
-      <p>
-        <strong>Pages:</strong> {book.pages}
-      </p>
-      <p>
-        <strong>Rating:</strong> {book.rating}
-      </p>
+    <div className="flex gap-5 p-5 border border-gray-300 rounded-lg max-w-4xl mx-auto mt-5">
+      <div>
+        <img
+          src={`/covers/${book.id}.jpg`}
+          alt={`${book.title} cover`}
+          className="w-52 h-80 object-cover rounded-lg"
+        />
+      </div>
+      <div className="flex-1">
+        <h1 className="text-2xl font-bold mb-2">{book.title}</h1>
+        <p className="mb-2">
+          <strong>Author:</strong> {book.author}
+        </p>
+        <p className="mb-2">
+          <strong>Description:</strong> {book.description}
+        </p>
+        <p className="mb-2">
+          <strong>Price:</strong> ${book.price.toFixed(2)}
+        </p>
+        <p className="mb-2">
+          <strong>Pages:</strong> {book.pages}
+        </p>
+        <p className="mb-2">
+          <strong>Rating:</strong> {book.rating} / 5
+        </p>
+      </div>
     </div>
   );
 };
