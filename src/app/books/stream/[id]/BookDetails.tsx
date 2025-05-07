@@ -1,4 +1,5 @@
 import { getBookById } from '@/api/book.api';
+import Image from 'next/image';
 
 type Props = { id: number };
 
@@ -12,7 +13,7 @@ const BookDetails: React.FC<Props> = async ({ id }) => {
   return (
     <div className="flex gap-5 p-5 border border-gray-300 rounded-lg max-w-4xl mx-auto mt-5">
       <div>
-        <img
+        <Image
           src={`/covers/${book.id}.jpg`}
           alt={`${book.title} cover`}
           className="w-52 h-80 object-cover rounded-lg"

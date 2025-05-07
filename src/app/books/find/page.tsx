@@ -2,6 +2,7 @@ import { getAllBooks } from '@/api/book.api';
 import FindBooksForm from './FindBooksForm';
 import { Book } from '@/types/book';
 import { NextPage } from 'next';
+import Image from 'next/image';
 
 interface Props {
   searchParams: Promise<{ query?: string }>;
@@ -52,7 +53,7 @@ const FindBooksPage: NextPage<Props> = async ({ searchParams }) => {
               </p>
             </div>
             <div className="ml-4">
-              <img
+              <Image
                 src={`/covers/${book.id}.jpg`}
                 alt={book.title}
                 className="w-24 h-32 object-cover rounded-md"

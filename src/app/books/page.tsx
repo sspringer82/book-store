@@ -1,6 +1,7 @@
 import { getAllBooks } from '@/api/book.api';
 import { Book } from '@/types/book';
 import { NextPage } from 'next';
+import Image from 'next/image';
 
 const BooksPage: NextPage = async () => {
   let books: Book[] = [];
@@ -47,7 +48,7 @@ const BooksPage: NextPage = async () => {
               </p>
             </div>
             <div className="ml-4">
-              <img
+              <Image
                 src={`/covers/${book.id}.jpg`}
                 alt={book.title}
                 className="w-24 h-32 object-cover rounded-md"

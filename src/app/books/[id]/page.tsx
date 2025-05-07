@@ -2,6 +2,7 @@ import { getAllBooks, getBookById } from '@/api/book.api';
 import Link from 'next/link';
 import { NextPage } from 'next';
 import { notFound } from 'next/navigation';
+import Image from 'next/image';
 
 type Props = {
   params: Promise<{
@@ -20,7 +21,7 @@ const BookDetailPage: NextPage<Props> = async ({ params }) => {
   return (
     <div className="flex gap-5 p-5 border border-gray-300 rounded-lg max-w-4xl mx-auto mt-5">
       <div>
-        <img
+        <Image
           src={`/covers/${book.id}.jpg`}
           alt={`${book.title} cover`}
           className="w-52 h-80 object-cover rounded-lg"
