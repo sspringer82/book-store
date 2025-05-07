@@ -22,6 +22,8 @@ const BookDetailPage: NextPage<Props> = async ({ params }) => {
     <div className="flex gap-5 p-5 border border-gray-300 rounded-lg max-w-4xl mx-auto mt-5">
       <div>
         <Image
+          width={200}
+          height={300}
           src={`/covers/${book.id}.jpg`}
           alt={`${book.title} cover`}
           className="w-52 h-80 object-cover rounded-lg"

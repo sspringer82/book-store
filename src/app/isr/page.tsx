@@ -52,6 +52,8 @@ const BooksPage: NextPage = async () => {
             </div>
             <div className="ml-4 flex flex-col items-center">
               <Image
+                width={96}
+                height={128}
                 src={`/covers/${book.id}.jpg`}
                 alt={book.title}
                 className="w-24 h-32 object-cover rounded-md mb-2"

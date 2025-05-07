@@ -54,6 +54,8 @@ const FindBooksPage: NextPage<Props> = async ({ searchParams }) => {
             </div>
             <div className="ml-4">
               <Image
+                width={96}
+                height={128}
                 src={`/covers/${book.id}.jpg`}
                 alt={book.title}
                 className="w-24 h-32 object-cover rounded-md"

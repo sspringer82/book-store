@@ -17,6 +17,8 @@ const BookDetails: React.FC<Props> = async ({ id }) => {
           src={`/covers/${book.id}.jpg`}
           alt={`${book.title} cover`}
           className="w-52 h-80 object-cover rounded-lg"
+          width={200}
+          height={300}
         />
       </div>
       <div className="flex-1">
