@@ -9,3 +9,5 @@ export type Book = {
   pages: number;
   rating: number;
 };
+
+export type CreateBook = Omit<Book, 'id' | 'rating'>;
