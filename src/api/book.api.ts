@@ -1,5 +1,5 @@
 import { Book, CreateBook } from '@/types/book';
-// import { setTimeout } from 'node:timers/promises';
+import { setTimeout } from 'node:timers/promises';
 import ky from 'ky';
 
 const api = ky.create({
@@ -11,7 +11,7 @@ export function getAllBooks(): Promise<Book[]> {
 }
 
 export async function getBookById(id: number): Promise<Book> {
-  // await setTimeout(2_000);
+  await setTimeout(2_000);
   return api.get(`${id}`).json();
 }
 

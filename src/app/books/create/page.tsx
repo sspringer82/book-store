@@ -4,9 +4,26 @@ import { NextPage } from 'next';
 import { useRouter } from 'next/navigation';
 import { Book } from '@/types/book';
 import { useForm } from 'react-hook-form';
-import { createBook } from '@/api/book.api';
+import { createBook } from '@/actions/book.actions';
+
+import { z } from 'zod';
+import { zodResolver } from '@hookform/resolvers/zod';
 
 type FormValues = Omit<Book, 'id'>;
+
+export const bookSchema = z.object({
+  ISBN: z.string().min(1, 'ISBN is required'),
+  title: z.string().min(1, 'Title is required'),
+  author: z.string().min(1, 'Author is required'),
+  genre: z.string().min(1, 'Genre is required'),
+  price: z.number().nonnegative('Price must be at least 0'),
+  description: z.string().min(1, 'Description is required'),
+  pages: z.coerce.number().min(1, 'Pages must be at least 1'),
+  rating: z
+    .number()
+    .min(1, 'Rating must be at least 1')
+    .max(5, 'Rating must be at most 5'),
+});
 
 const CreatePage: NextPage = () => {
   const router = useRouter();
@@ -15,6 +32,7 @@ const CreatePage: NextPage = () => {
     handleSubmit,
     formState: { errors, isSubmitting },
   } = useForm<FormValues>({
+    resolver: zodResolver(bookSchema),
     defaultValues: {
       ISBN: '',
       title: '',
