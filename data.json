@@ -1,0 +1,356 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "ISBN": "978-3-16-148410-0",
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "genre": "Fiction",
+      "price": 10.99,
+      "description": "A novel set in the 1920s that explores themes of wealth, love, and the American Dream.",
+      "pages": 180,
+      "rating": 4.5
+    },
+    {
+      "id": 2,
+      "ISBN": "978-0-7432-7356-5",
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "genre": "Fiction",
+      "price": 7.99,
+      "description": "A story of racial injustice and childhood innocence in the Deep South.",
+      "pages": 281,
+      "rating": 4.8
+    },
+    {
+      "id": 3,
+      "ISBN": "978-0-452-28423-4",
+      "title": "1984",
+      "author": "George Orwell",
+      "genre": "Dystopian",
+      "price": 8.99,
+      "description": "A dystopian novel about totalitarianism and surveillance.",
+      "pages": 328,
+      "rating": 4.7
+    },
+    {
+      "id": 4,
+      "ISBN": "978-0-14-243723-0",
+      "title": "Moby Dick",
+      "author": "Herman Melville",
+      "genre": "Adventure",
+      "price": 9.99,
+      "description": "The epic tale of Captain Ahab's obsessive quest to kill the white whale.",
+      "pages": 635,
+      "rating": 4.2
+    },
+    {
+      "id": 5,
+      "ISBN": "978-0-06-112008-4",
+      "title": "Brave New World",
+      "author": "Aldous Huxley",
+      "genre": "Dystopian",
+      "price": 9.49,
+      "description": "A futuristic society driven by technology and consumerism.",
+      "pages": 268,
+      "rating": 4.6
+    },
+    {
+      "id": 6,
+      "ISBN": "978-0-452-28425-8",
+      "title": "Animal Farm",
+      "author": "George Orwell",
+      "genre": "Political Satire",
+      "price": 6.99,
+      "description": "A satirical allegory about the Russian Revolution and totalitarianism.",
+      "pages": 112,
+      "rating": 4.4
+    },
+    {
+      "id": 7,
+      "ISBN": "978-0-7432-7357-2",
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "genre": "Romance",
+      "price": 5.99,
+      "description": "A classic novel about love, class, and social expectations.",
+      "pages": 279,
+      "rating": 4.9
+    },
+    {
+      "id": 8,
+      "ISBN": "978-0-14-118280-3",
+      "title": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "genre": "Fiction",
+      "price": 8.49,
+      "description": "A story about teenage rebellion and alienation.",
+      "pages": 214,
+      "rating": 4.3
+    },
+    {
+      "id": 9,
+      "ISBN": "978-0-14-044913-6",
+      "title": "Crime and Punishment",
+      "author": "Fyodor Dostoevsky",
+      "genre": "Psychological Fiction",
+      "price": 11.99,
+      "description": "A psychological exploration of guilt and redemption.",
+      "pages": 671,
+      "rating": 4.7
+    },
+    {
+      "id": 10,
+      "ISBN": "978-0-14-243717-9",
+      "title": "The Odyssey",
+      "author": "Homer",
+      "genre": "Epic",
+      "price": 12.99,
+      "description": "The epic journey of Odysseus returning home after the Trojan War.",
+      "pages": 541,
+      "rating": 4.6
+    },
+    {
+      "id": 11,
+      "ISBN": "978-0-06-085052-4",
+      "title": "The Alchemist",
+      "author": "Paulo Coelho",
+      "genre": "Adventure",
+      "price": 9.99,
+      "description": "A philosophical tale about following one's dreams.",
+      "pages": 208,
+      "rating": 4.5
+    },
+    {
+      "id": 12,
+      "ISBN": "978-0-14-118257-5",
+      "title": "Of Mice and Men",
+      "author": "John Steinbeck",
+      "genre": "Fiction",
+      "price": 7.49,
+      "description": "A story of friendship and hardship during the Great Depression.",
+      "pages": 187,
+      "rating": 4.4
+    },
+    {
+      "id": 13,
+      "ISBN": "978-0-14-044926-6",
+      "title": "War and Peace",
+      "author": "Leo Tolstoy",
+      "genre": "Historical Fiction",
+      "price": 14.99,
+      "description": "A sweeping narrative of Russian society during the Napoleonic Wars.",
+      "pages": 1225,
+      "rating": 4.8
+    },
+    {
+      "id": 14,
+      "ISBN": "978-0-14-243720-9",
+      "title": "The Iliad",
+      "author": "Homer",
+      "genre": "Epic",
+      "price": 11.99,
+      "description": "The epic tale of the Trojan War and its heroes.",
+      "pages": 704,
+      "rating": 4.5
+    },
+    {
+      "id": 15,
+      "ISBN": "978-0-06-112241-5",
+      "title": "The Road",
+      "author": "Cormac McCarthy",
+      "genre": "Post-Apocalyptic",
+      "price": 8.99,
+      "description": "A harrowing journey of a father and son in a post-apocalyptic world.",
+      "pages": 287,
+      "rating": 4.3
+    },
+    {
+      "id": 16,
+      "ISBN": "978-0-14-118280-3",
+      "title": "Frankenstein",
+      "author": "Mary Shelley",
+      "genre": "Gothic Fiction",
+      "price": 6.99,
+      "description": "A scientist's creation turns into a monster in this gothic classic.",
+      "pages": 280,
+      "rating": 4.4
+    },
+    {
+      "id": 17,
+      "ISBN": "978-0-14-118257-5",
+      "title": "The Grapes of Wrath",
+      "author": "John Steinbeck",
+      "genre": "Fiction",
+      "price": 9.49,
+      "description": "A story of a family's struggle during the Great Depression.",
+      "pages": 464,
+      "rating": 4.6
+    },
+    {
+      "id": 18,
+      "ISBN": "978-0-14-044927-3",
+      "title": "Anna Karenina",
+      "author": "Leo Tolstoy",
+      "genre": "Romance",
+      "price": 12.99,
+      "description": "A tragic love story set in 19th-century Russia.",
+      "pages": 864,
+      "rating": 4.7
+    },
+    {
+      "id": 19,
+      "ISBN": "978-0-14-243723-0",
+      "title": "Dracula",
+      "author": "Bram Stoker",
+      "genre": "Horror",
+      "price": 7.99,
+      "description": "The classic tale of the vampire Count Dracula.",
+      "pages": 418,
+      "rating": 4.5
+    },
+    {
+      "id": 20,
+      "ISBN": "978-0-14-118280-3",
+      "title": "Wuthering Heights",
+      "author": "Emily Brontë",
+      "genre": "Gothic Fiction",
+      "price": 8.49,
+      "description": "A tale of passion and revenge on the Yorkshire moors.",
+      "pages": 416,
+      "rating": 4.4
+    },
+    {
+      "id": 21,
+      "ISBN": "978-0-14-118257-5",
+      "title": "Jane Eyre",
+      "author": "Charlotte Brontë",
+      "genre": "Romance",
+      "price": 9.99,
+      "description": "A story of love and independence in Victorian England.",
+      "pages": 532,
+      "rating": 4.8
+    }
+  ],
+  "authors": [
+    {
+      "id": 1,
+      "name": "F. Scott Fitzgerald",
+      "bio": "American novelist and short story writer, widely regarded as one of the greatest American writers of the 20th century.",
+      "birthDate": "1896-09-24",
+      "country": "United States"
+    },
+    {
+      "id": 2,
+      "name": "Harper Lee",
+      "bio": "American novelist best known for her 1960 novel 'To Kill a Mockingbird,' which won the Pulitzer Prize.",
+      "birthDate": "1926-04-28",
+      "country": "United States"
+    },
+    {
+      "id": 3,
+      "name": "George Orwell",
+      "bio": "English novelist, essayist, journalist, and critic, known for his works '1984' and 'Animal Farm.'",
+      "birthDate": "1903-06-25",
+      "country": "United Kingdom"
+    },
+    {
+      "id": 4,
+      "name": "Herman Melville",
+      "bio": "American novelist, short story writer, and poet of the American Renaissance period, best known for 'Moby Dick.'",
+      "birthDate": "1819-08-01",
+      "country": "United States"
+    },
+    {
+      "id": 5,
+      "name": "Aldous Huxley",
+      "bio": "English writer and philosopher, best known for his dystopian novel 'Brave New World.'",
+      "birthDate": "1894-07-26",
+      "country": "United Kingdom"
+    },
+    {
+      "id": 6,
+      "name": "Jane Austen",
+      "bio": "English novelist known for her six major novels, including 'Pride and Prejudice' and 'Sense and Sensibility.'",
+      "birthDate": "1775-12-16",
+      "country": "United Kingdom"
+    },
+    {
+      "id": 7,
+      "name": "J.D. Salinger",
+      "bio": "American writer best known for his novel 'The Catcher in the Rye.'",
+      "birthDate": "1919-01-01",
+      "country": "United States"
+    },
+    {
+      "id": 8,
+      "name": "Fyodor Dostoevsky",
+      "bio": "Russian novelist, short story writer, essayist, and journalist, known for his works 'Crime and Punishment' and 'The Brothers Karamazov.'",
+      "birthDate": "1821-11-11",
+      "country": "Russia"
+    },
+    {
+      "id": 9,
+      "name": "Homer",
+      "bio": "Ancient Greek poet traditionally said to be the author of the epic poems 'The Iliad' and 'The Odyssey.'",
+      "birthDate": "Unknown",
+      "country": "Greece"
+    },
+    {
+      "id": 10,
+      "name": "Paulo Coelho",
+      "bio": "Brazilian lyricist and novelist, best known for his novel 'The Alchemist.'",
+      "birthDate": "1947-08-24",
+      "country": "Brazil"
+    },
+    {
+      "id": 11,
+      "name": "John Steinbeck",
+      "bio": "American author and Nobel Prize winner, known for his works 'Of Mice and Men' and 'The Grapes of Wrath.'",
+      "birthDate": "1902-02-27",
+      "country": "United States"
+    },
+    {
+      "id": 12,
+      "name": "Leo Tolstoy",
+      "bio": "Russian writer, regarded as one of the greatest authors of all time, known for 'War and Peace' and 'Anna Karenina.'",
+      "birthDate": "1828-09-09",
+      "country": "Russia"
+    },
+    {
+      "id": 13,
+      "name": "Bram Stoker",
+      "bio": "Irish author best known for his 1897 Gothic novel 'Dracula.'",
+      "birthDate": "1847-11-08",
+      "country": "Ireland"
+    },
+    {
+      "id": 14,
+      "name": "Emily Brontë",
+      "bio": "English novelist and poet, best known for her only novel 'Wuthering Heights.'",
+      "birthDate": "1818-07-30",
+      "country": "United Kingdom"
+    },
+    {
+      "id": 15,
+      "name": "Charlotte Brontë",
+      "bio": "English novelist and poet, the eldest of the three Brontë sisters, best known for 'Jane Eyre.'",
+      "birthDate": "1816-04-21",
+      "country": "United Kingdom"
+    },
+    {
+      "id": 16,
+      "name": "Mary Shelley",
+      "bio": "English novelist who wrote the Gothic novel 'Frankenstein; or, The Modern Prometheus.'",
+      "birthDate": "1797-08-30",
+      "country": "United Kingdom"
+    },
+    {
+      "id": 17,
+      "name": "Cormac McCarthy",
+      "bio": "American novelist, playwright, and screenwriter, known for his works 'The Road' and 'No Country for Old Men.'",
+      "birthDate": "1933-07-20",
+      "country": "United States"
+    }
+  ]
+}
