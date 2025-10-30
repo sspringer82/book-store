@@ -8,6 +8,8 @@ import { createBook } from '@/actions/book.actions';
 
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
+import { AutoForm } from '@/components/ui/autoform';
+import { ZodProvider } from '@autoform/zod';
 
 type FormValues = Omit<Book, 'id'>;
 
@@ -16,10 +18,10 @@ export const bookSchema = z.object({
   title: z.string().min(1, 'Title is required'),
   author: z.string().min(1, 'Author is required'),
   genre: z.string().min(1, 'Genre is required'),
-  price: z.number().nonnegative('Price must be at least 0'),
+  price: z.coerce.number().nonnegative('Price must be at least 0'),
   description: z.string().min(1, 'Description is required'),
   pages: z.coerce.number().min(1, 'Pages must be at least 1'),
-  rating: z
+  rating: z.coerce
     .number()
     .min(1, 'Rating must be at least 1')
     .max(5, 'Rating must be at most 5'),
@@ -49,6 +51,18 @@ const CreatePage: NextPage = () => {
     await createBook(data as unknown as Book);
     router.push('/books');
   };
+
+  const schemaProvider = new ZodProvider(bookSchema);
+
+  return (
+    <AutoForm
+      schema={schemaProvider}
+      onSubmit={(data, form) => {
+        onSubmit(data as FormValues);
+      }}
+      withSubmit
+    />
+  );
 
   return (
     <div className="max-w-xl mx-auto p-6 bg-white rounded shadow mt-8">
